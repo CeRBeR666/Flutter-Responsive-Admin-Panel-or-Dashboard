@@ -10,7 +10,7 @@ class MainScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      key: context.read<MenuController>().scaffoldKey,
+      drawerEnableOpenDragGesture: false,
       drawer: SideMenu(),
       body: SafeArea(
         child: Row(
